@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
 import './App.css';
+import Header from './components/Header';
+import api from './services/api';
 
 function App() {
+  const [codeCity, setCodeCity] = useState(null)
+
+  const id = 430480
+  const dados = `weather?format=json-cors&key=0c2a0623&woeid=`
+  const r = dados + id
+useEffect(() => {
+  async function loadTransactions() {
+    const { data } = await api.get(`/${r}`);
+    console.log(data)
+  }
+  loadTransactions()
+}, [r]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <h1>Cote Clima</h1>
     </div>
   );
 }
