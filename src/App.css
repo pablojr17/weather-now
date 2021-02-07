@@ -13,7 +13,6 @@
   align-items: center;
   border: 1px solid #101010;
   border-radius: 8px;
-  /* border-collapse: collapse; */
   min-width: 250px;
   height: 300px;
   box-shadow: 5px 5px 5px black;
@@ -21,25 +20,42 @@
   margin: 8px;
 
 }
+.city {
+  font-size: 85;
+  text-shadow: white 0.1em 0.1em 0.2em
+}
 
-h1 {
+h2 {
+  text-shadow: white 0.1em 0.1em 0.2em;
+}
+
+.titulo {
   font-size: 22px;
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 .data {
   font-weight: bold;
   display: flex;
+  color: white;
+  font-size: 20;
+  text-shadow: black 0.1em 0.1em 0.2em;
   justify-content: space-evenly;
 }
 
 .temp {
   display: flex;
   justify-content: space-evenly;
+  color: white;
+  font-size: 20;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  justify-content: space-evenly;
 }
 
-a {
-  color: white;
-  background: #15159090;
-  text-decoration: none;
-  margin-bottom: 20px;
+img.chuva {
+  margin-top: 20px;
+  width: 100px;
 }
+
+
