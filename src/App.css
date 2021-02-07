@@ -1,39 +1,45 @@
 .App {
   text-align: center;
-  background-image: url('./assets/lay.jpeg') cover ;
+  background: #000 url("./assets/lay.png") no-repeat fixed center;
+  background-size: 100% 100%;
+  width: auto;
+  height: 900px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.item {
+  background-color: rgba(10, 10, 10, 0.4);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  border: 1px solid #101010;
+  border-radius: 8px;
+  /* border-collapse: collapse; */
+  min-width: 250px;
+  height: 300px;
+  box-shadow: 5px 5px 5px black;
+  display: inline-block;
+  margin: 8px;
+
+}
+
+h1 {
+  font-size: 22px;
+}
+
+.data {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.temp {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+a {
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background: #15159090;
+  text-decoration: none;
+  margin-bottom: 20px;
 }
