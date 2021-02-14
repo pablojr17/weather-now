@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback, useRef } from 'react';
+import React, { useState, useCallback, useRef } from 'react';
 import './App.css';
 import Header from './components/Header';
 import { Form } from "@unform/web";
@@ -17,7 +17,7 @@ function App() {
   const formRef = useRef();
 
   const handleSubmit = useCallback(async (res) => {
-    const { data } = await api.get(`/weather?format=json-cors&key=47a032f6&city_name=${res.cidade}`);
+    const { data } = await api.get(`/weather?format=json-cors&key=538abbeb&city_name=${res.cidade}`);
     setCity(data.results)
     setValue('')
     setValue()
