@@ -4,7 +4,7 @@ import { Container } from './styles';
 
 const Header = () => (
   <Container>
-    <img src={Logo} className="logo" alt="coted" />
+    <img src={Logo} className="logo" alt="cote" />
   </Container>
 );
 
